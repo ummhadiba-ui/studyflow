@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Flow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Study Flow</h1>
+        <h2 id="welcome-message"></h2>
+        <nav>
+            <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#students">Students</a></li>
+            <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="welcome" id="home">
+        <h2>Student Management Dashboard</h2>
+        <p>Manage students and track their acedemic performance</p>
+        <h4>Welcome to StudyFlow</h4>
+    </section>
+    <section class="statistics" id="dashboard">
+        <div class="stats-card">
+            <h3>Total Students</h3>
+            <p>05</p>
+        </div>
+        <div class="stats-card">
+            <h3>Passed Students</h3>
+            <p>00</p>
+        </div>
+        <div class="stats-card">
+            <h3>Failed Students</h3>
+            <p>00</p>
+        </div>
+        <div class="stats-card">
+            <h3>Average Marks</h3>
+            <p>00%</p>
+        </div>
+    </section>
+    <section class="allstudents" id="students">
+        <h2>All Students</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Marks</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody id="student-table-body">
+                <tr>
+                    <td>1001</td>
+                    <td>Ali</td>
+                    <td>85%</td>
+                    <td class="pass">Pass</td>
+                </tr>
+                <tr>
+                    <td>1002</td>
+                    <td>Sara</td>
+                    <td>45%</td>
+                    <td class="fail">Fail</td>
+                </tr>
+                <tr>
+                    <td>1003</td>
+                    <td>Ahmed</td>
+                    <td>92%</td>
+                    <td class="pass">Pass</td>
+                </tr>
+                <tr>
+                    <td>1004</td>
+                    <td>Ayesha</td>
+                    <td>35%</td>
+                    <td class="fail">Fail</td>
+                </tr>
+                <tr>
+                    <td>1005</td>
+                    <td>Hamza</td>
+                    <td>67%</td>
+                    <td class="pass">Pass</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="passingStudents">
+        <h2>Passing Students</h2>
+        <p>Students who achieved 50% or above</p>
+
+        <div class="passing-list"></div>
+    </section>
+    <footer id="about">
+        <p>Made with ❤️ by codingWorld</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
